@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="heading">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          We'd love to hear your feedback. Please fill out the form below.
+        </p>
+      </div>
+      <form action="#" class="form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age" id="number-label">Age</label>
+          <input
+            type="number"
+            id="age"
+            placeholder="Enter your age"
+            min="10"
+            max="60"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="rating">How satisfied are you with our service?</label>
+          <select id="dropdown" name="rating" required>
+            <option value="">Select a rating</option>
+            <option value="very-satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="dissatisfied">Dissatisfied</option>
+            <option value="very-dissatisfied">Very Dissatisfied</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <div class="radio-group">
+            <label
+              ><input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+              />
+              Male</label
+            >
+            <label
+              ><input type="radio" id="female" name="gender" value="female" />
+              Female</label
+            >
+            <label
+              ><input type="radio" id="other" name="gender" value="other" />
+              Other</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="services"
+            >Which of our services have you used? (Check all that apply)</label
+          >
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" name="services" value="designing" />
+              Designing</label
+            >
+            <label
+              ><input type="checkbox" name="services" value="development" />
+              Development</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="services"
+                value="quality-assurance"
+              />
+              Quality Assurance</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comments">Any additional comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            placeholder="Share your feedback or suggestions..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
